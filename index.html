@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+		<title>Chat app using NodeJS + SOCKET.IO + MySql</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<style type="text/css">body { padding-top: 60px; }</style>
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="index.html">NodeJS + SOCKET.IO + MySql</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1>Chat app using NodeJS + SOCKET.IO + MySql</h1>
+			<p>
+				This is a simple chat application, Using NodeJS + SOCKET.IO + MySql.
+			</p>
+
+			<form class="form-inline" id="message-form">
+				<input id="name" type="text" class="input-medium" placeholder="Name" />
+				<input id="message" type="text" class="input-xxlarge" placeHolder="Message" />
+				<input type="submit" value="Send" />
+			</form>
+
+			<div>
+				<ul id="messages"></ul>
+			</div>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+		<script src="js/node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+		<script src="js/client.js"></script>
+	</body>
+</html>
